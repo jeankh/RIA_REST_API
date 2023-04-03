@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ens-detail</title>
+</head>
+<body class = "container">
+    <strong>
+        {% if message %}   
+        "error" : "{{ message }}"
+        {%endif %}
+    </strong>
+    <form  method="post">
+        <label for="id_utilisateur">Id_utilisateur</label>
+        <br>
+        <input type="text" name="id_utilisateur" required>
+
+        <label for="responsabilite_ens">Responsabilite_ens</label>
+        <br>
+        <input type="text" name="responsabilite_ens" >
+
+        <label for="volume_horaire">Volume_horaire</label>
+        <br>
+        <input type="number" name="volume_horaire" >
+        <input type="submit">
+    </form>
+</body>
+</html>
